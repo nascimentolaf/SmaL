@@ -1,0 +1,58 @@
+{
+  "name": "smal-web-version",
+  "version": "0.0.1",
+  "description": "Projeto de graduação - Sistema de recepção VLC",
+  "productName": "PG II",
+  "author": "alafSantos <alaf.ns4@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "@userfront/core": "^0.2.42",
+    "axios": "^0.26.1",
+    "chart.js": "^3.8.0",
+    "core-js": "^3.6.5",
+    "dotenv-safe": "^8.2.0",
+    "leaflet": "^1.7.1",
+    "mongodb": "^4.5.0",
+    "quasar": "^2.6.0",
+    "tableau-api": "^2.2.3",
+    "vue": "^3.0.0",
+    "vue-chartjs": "^4.1.1",
+    "vue-i18n": "^9.1.9",
+    "vue-ls": "^4.2.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app-webpack": "^3.0.0",
+    "electron": "^19.0.6",
+    "electron-packager": "^15.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-standard": "^17.0.0-1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-n": "^14.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "eslint-webpack-plugin": "^3.1.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

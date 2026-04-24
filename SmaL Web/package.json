@@ -1,9 +1,9 @@
 {
-  "name": "smal-web-version",
+  "name": "smal-web",
   "version": "0.0.1",
-  "description": "Projeto de graduação - Sistema de recepção VLC",
-  "productName": "PG II",
-  "author": "alafSantos <alaf.ns4@gmail.com>",
+  "description": "Smart Light (SmaL): A Low-Cost Multiplatform Visible Light Communication (VLC) receiver prototype.",
+  "productName": "SmaL Web",
+  "author": "nascimentolaf <alaf.nascimento@ip-paris.fr>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

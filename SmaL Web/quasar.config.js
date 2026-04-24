@@ -151,9 +151,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: 'PG II',
-        short_name: 'PG II',
-        description: 'Projeto de graduação - Sistema de recepção VLC',
+        name: 'SmaL Web',
+        short_name: 'SmaL Web',
+        description: 'Smart Light (SmaL): A Low-Cost Multiplatform Visible Light Communication (VLC) receiver prototype.',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -218,7 +218,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'smal-web-version'
+        appId: 'smal-web'
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain

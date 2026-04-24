@@ -1,6 +1,6 @@
-# PG II (smal-web-version)
+# Smal-Web
 
-Projeto de graduação - Sistema de recepção VLC
+Smart Light (SmaL): A Low-Cost Multiplatform Visible Light Communication (VLC) receiver prototype.
 
 ## Install the dependencies
 ```bash

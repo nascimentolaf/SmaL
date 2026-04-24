@@ -88,28 +88,16 @@ const linksList = [
 
 const linksList2 = [
   {
-    title: 'Alaf do Nascimento Santos',
-    caption: 'Aluno',
-    icon: 'school',
-    link: 'https://scholar.google.com/citations?user=FMMwyvIAAAAJ&hl=pt-BR&oi=ao'
-  },
-  {
-    title: 'Jair Adriano Lima Silva',
-    caption: 'Orientador',
-    icon: 'school',
-    link: 'https://scholar.google.com/citations?user=QzvTJn8AAAAJ&hl=pt-BR&oi=ao'
-  },
-  {
-    title: 'Higor Araújo Fim Camporez',
-    caption: 'Coorientador',
-    icon: 'school',
-    link: 'https://scholar.google.com/citations?hl=pt-BR&user=mudtiQEAAAAJ'
-  },
-  {
     title: 'Repositório do Projeto',
     caption: 'Github',
     icon: 'code',
-    link: 'https://github.com/alafSantos'
+    link: 'https://github.com/nascimentolaf/SmaL'
+  },
+  {
+    title: 'Alaf Nascimento',
+    caption: 'Author\'s Scholar Profile',
+    icon: 'school',
+    link: 'https://scholar.google.com/citations?user=FMMwyvIAAAAJ&hl=pt-BR&oi=ao'
   }
 ]
 

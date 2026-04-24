@@ -4,7 +4,7 @@
     <td class='text-right' >
       <q-btn
         color='primary'
-        label='Selecionar Porta'
+        label='Set Serial Port'
         no-caps
         @click='created'
       />
@@ -15,7 +15,7 @@
       <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 q-pa-sm">
         <CardBadge
-          title='Temperatura'
+          title='Temperature'
           borderColor="red"
           color="red">
           <template v-slot:content>
@@ -28,7 +28,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 q-pa-sm">
       <CardBadge
-        title='Oximetria'
+        title='Oximetry'
         borderColor="green"
         color="blue">
         <template v-slot:content>
@@ -41,7 +41,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 q-pa-sm">
       <CardBadge
-        title='Frequência de Pulso'
+        title='Pulse Rate'
         borderColor="green"
         color="green">
         <template v-slot:content>
@@ -54,7 +54,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 q-pa-sm">
       <CardBadge
-        title='Respiração'
+        title='Respiratory Rate'
         borderColor="yellow"
         color="yellow">
         <template v-slot:content>
@@ -67,7 +67,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 q-pa-sm">
       <CardBadge
-        title='Frequência Cardíaca'
+        title='Heart Rate'
         borderColor="purple"
         color="purple">
         <template v-slot:content>
@@ -80,7 +80,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 q-pa-sm">
       <CardBadge
-        title='Pressão Não Invasiva'
+        title='Non-invasive Blood Pressure'
         borderColor="orange"
         color="orange">
         <template v-slot:content>
@@ -92,7 +92,7 @@
       </div>
 
   <div class="col-12 justify-center flex" style="margin-top:10px;">
-      Última Leitura: {{leitura}}
+      Last Read: {{leitura}}
   </div>
 
   </div>
@@ -151,7 +151,7 @@ export default {
   data () {
     return {
       dataValue: [0, 0, 0, 0, 0, 0],
-      leitura: 'nenhum dado recebido'
+      leitura: 'no data has been received '
     }
   },
   components: {

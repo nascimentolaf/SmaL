@@ -91,7 +91,7 @@
 import { Line as LineChartGenerator } from 'vue-chartjs'
 import { ref } from 'vue'
 
-const parametros = ['Temperatura [°C]', 'Oximetria [%]', 'Frequência de Pulso [bpm]', 'Respiração [IRPM]', 'Frequência Cardíaca [bpm]', 'Pressão Não Invasiva [mmHg]']
+const parametros = ['Temperature [°C]', 'Oximetry [%]', 'Pulse Rate [bpm]', 'Respiratory Rate [IRPM]', 'Heart Rate [bpm]', 'Non-invasive Blood Pressure [mmHg]']
 const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange']
 
 function getLocalStorage (key) {
@@ -180,7 +180,7 @@ export default {
   },
   data () {
     return {
-      parametros: ['Temperatura [°C]', 'Oximetria [%]', 'Frequência de Pulso [bpm]', 'Respiração [IRPM]', 'Frequência Cardíaca [bpm]', 'Pressão Não Invasiva [mmHg]'],
+      parametros: ['Temperature [°C]', 'Oximetry [%]', 'Pulse Rate [bpm]', 'Respiratory Rate [IRPM]', 'Heart Rate [bpm]', 'Non-invasive Blood Pressure [mmHg]'],
 
       chartData: [{
         labels: valueArrayTime[0],

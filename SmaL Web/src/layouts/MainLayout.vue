@@ -11,9 +11,9 @@
           @click="toggleLeftDrawer"
         />
         <q-toolbar-title>
-          SmaL Web Version
+          SmaL Web
         </q-toolbar-title>
-      <div> v1.0.0 </div>
+      <div> v1.0.1 </div>
       </q-toolbar>
     </q-header>
 
@@ -74,13 +74,13 @@ Userfront.init('alaf')
 const linksList = [
   {
     title: 'Home',
-    caption: 'Recepção de Dados',
+    caption: 'Data Acquisition',
     icon: 'sensors',
     link: '/#/'
   },
   {
-    title: 'Gráficos',
-    caption: 'Visualização de Gráficos',
+    title: 'Charts',
+    caption: 'Charts Visualization',
     icon: 'line_axis',
     link: '/#/graficos'
   }
@@ -88,7 +88,7 @@ const linksList = [
 
 const linksList2 = [
   {
-    title: 'Repositório do Projeto',
+    title: 'Project Repository',
     caption: 'Github',
     icon: 'code',
     link: 'https://github.com/nascimentolaf/SmaL'

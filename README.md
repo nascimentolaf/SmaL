@@ -101,9 +101,10 @@ Then open the app in Chrome/Edge, plug in the SmaL PnP dongle, and click **"Sele
 
 | | |
 |:---|:---|
-| **Authors** | Alaf Nascimento, Klaas Zwaag, Wesley Costa, Higor Camporez, Francisco Santos, Jair Silva |
+| **Authors** | Alaf Nascimento, Higor Camporez,  Klaas Zwaag, Wesley Costa, Francisco Santos, Jair Silva |
 | **Affiliation** | Electrical Engineering Dept., Federal University of Espírito Santo (UFES), Vitória/ES, Brazil |
 | **Development Year** | 2022 |
+| **Release Year** | 2026 |
 | **License** | [MIT](LICENSE) |
 
 ## Publication
@@ -111,13 +112,11 @@ Then open the app in Chrome/Edge, plug in the SmaL PnP dongle, and click **"Sele
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{nascimento2022smal,
+@inproceedings{nascimento2026smal,
   title     = {A Low-Cost Multiplatform VLC System Prototype for Indoor Attocell Downlink Communication},
-  author    = {Nascimento, Alaf and Zwaag, Klaas and Costa, Wesley and Camporez, Higor and Santos, Francisco and Silva, Jair},
-  booktitle = {[Conference name]},
-  year      = {2022},
-  address   = {Vitória, ES, Brazil}
+  author    = {Nascimento, Alaf and Camporez, Higor and Zwaag, Klaas and Costa, Wesley and Santos, Francisco and Silva, Jair},
+  booktitle={Workshop de Computa{\c{c}}{\~a}o Urbana (CoUrb)},
+  year={2026},
+  organization={SBC}
 }
 ```
-
-> The first author is currently affiliated with LTCI, Télécom Paris, Institut Polytechnique de Paris, France.

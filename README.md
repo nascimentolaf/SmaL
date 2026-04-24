@@ -1,12 +1,12 @@
 # Smart Light (SmaL)
 
-A low-cost, multiplatform **Visible Light Communication (VLC)** receiver prototype for indoor attocell downlink communication. The system consists of a Plug-and-Play (PnP) USB hardware dongle, the **SmaL PnP**, paired with a browser-based web application, the **SmaL Web Version**, for real-time data acquisition and visualization.
+A low-cost, multiplatform **Visible Light Communication (VLC)** receiver prototype for indoor attocell downlink communication. The system consists of a Plug-and-Play (PnP) USB hardware dongle, the **SmaL PnP**, paired with a browser-based web application, the **SmaL Web**, for reactive data acquisition and visualization.
 
 > 📹 [Watch the demo on YouTube](https://www.youtube.com/watch?v=HrTFufJpvJ0)
 
 ## Overview
 
-As the Radio Frequency (RF) spectrum grows increasingly congested, VLC emerges as a promising complementary technology for indoor environments, leveraging existing LED lighting infrastructure for energy-efficient, interference-free communication.
+As the Radio Frequency (RF) spectrum grows increasingly congested, VLC emerges as a promising complementary technology for indoor environments, leveraging existing LED infrastructure for energy-efficient communication.
 
 This project implements a complete VLC downlink receiver chain:
 
@@ -22,7 +22,7 @@ This repository contains the **receiver-side implementation**, composed of:
 
 | Component | Description |
 |:---|:---|
-| `SmaL PnP` | Embedded firmware for the SAMD21 microcontroller (hardware dongle) |
+| `SmaL PnP` | Embedded firmware for the SAMD21 microcontroller |
 | `SmaL Web` | Vue.js/Quasar web application for serial data decoding and visualization |
 
 ## System Architecture
@@ -34,10 +34,10 @@ This repository contains the **receiver-side implementation**, composed of:
 
 ### Receiver (this repository)
 1. **OPT101 photosensor** converts incident optical power to an analog electrical signal
-2. **Low-pass filter** (< 120 Hz) suppresses ambient LED lighting interference
+2. **Low-pass filter** (< 120 Hz) generates an ambient LED lighting interference reference signal 
 3. **Comparator** reconstructs a clean digital waveform from the filtered reference
-4. **SAMD21 microcontroller** decodes Manchester-encoded bits, validates packets via parity check, and transmits data over USB (UART/serial)
-5. **SmaL Web app** reads the serial stream via the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API), decodes IEEE 754 floating-point values, and displays them in real time
+4. **SAMD21** decodes Manchester-encoded bits, validates packets via parity check, and transmits data over USB (UART/serial)
+5. **SmaL Web** reads the serial stream via the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API), decodes IEEE 754 floating-point values, and reactively displays them.
 
 ### Packet Protocol
 
@@ -50,11 +50,11 @@ Payload values are encoded in **IEEE 754 floating-point** format. The parity bit
 ## Features
 
 - 🔌 **Plug-and-Play** USB dongle, no specialized hardware required on the host
-- 🌐 **Multiplatform** web interface, runs in any Chromium-based browser (Chrome, Edge, Opera)
+- 🌐 **Multiplatform** web interface, runs in any Chromium-based browser (Chrome, Edge, etc)
 - 💡 **Ambient light rejection** via low-pass filtering and comparator-based signal recovery
 - 📡 **Manchester decoding** with interrupt-driven firmware on the SAMD21
-- 📊 **Real-time visualization** of received physiological parameters
-- ✅ **BER evaluation**, zero error achieved up to ~280 cm under LOS conditions
+- 📊 **Reactive visualization** of received physiological parameters
+- ✅ **BER evaluation**, zero error achieved up to 280 cm under LOS conditions
 - 🏥 **HL7-compatible**, validated with a multiparameter patient monitor
 
 ## Performance
@@ -62,7 +62,7 @@ Payload values are encoded in **IEEE 754 floating-point** format. The parity bit
 | Condition | Distance | BER |
 |:---|:---|:---|
 | No ambient light | 30 to 280 cm | ~0% |
-| Ambient light, high gain (Rf = 860 kΩ) | up to ~290 cm | < 0.26% |
+| Ambient light, high gain (Rf = 860 kΩ) | up to 300 cm | < 0.26% |
 | Ambient light, low gain (Rf = 157 kΩ) | 30 to 290 cm | ~0% (2.45% at 300 cm) |
 
 Goodput (N = 6 parameters): **~955 bps** (~4.48% protocol overhead), at ~5 packets/second.
@@ -84,11 +84,11 @@ Goodput (N = 6 parameters): **~955 bps** (~4.48% protocol overhead), at ~5 packe
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-org>/smal.git
-cd smal
+git clone https://github.com/nascimentolaf/SmaL.git
+cd SmaL
 
 # Install web app dependencies
-cd web
+cd SmaL\ Web/
 npm install
 
 # Run the development server
